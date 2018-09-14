@@ -1,0 +1,218 @@
+<!---
+  Author : http://andreatchori.com/
+ * Copyright (c) 2018 Euphrate André Atchori
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Music template -- Lecteur online </title>
+	<!-- ========== CSS INCLUDES ========== -->
+	<link rel="stylesheet" href="assets/css/plugins.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+	<!-- Start player -->
+	<div class="main-music-player">
+		<a class="hide-player-button">
+			<i class="fa fa-plus"></i>
+			<i class="fa fa-minus"></i>
+		</a>
+		<div id="dre-main-player" class="jp-jplayer" data-audio-src="assets/audio/hillsong.mp3" data-title="So will I - Hillsong United" data-artist="Hillsong United"></div>
+		<div id="dre-main-player-content" class="dre-main-player" role="application" aria-label="So will I">
+			<div class="container">
+				<div class="row">
+					<div class="left-player-side">
+						<div class="dre-prev">
+							<i class="fa fa-step-backward"></i>
+						</div>
+						<div class="dre-play">
+							<i class="fa fa-play"></i>
+						</div>
+						<div class="dre-pause">
+							<i class="fa fa-pause"></i>
+						</div>
+						<div class="dre-next">
+							<i class="fa fa-step-forward"></i>
+						</div>
+						<button id="playlist-toggle" class="jplayerButton">
+							<span class="span-1"></span>
+							<span class="span-2"></span>
+							<span class="span-3"></span>
+						</button>
+					</div>
+					<div class="center-side">
+						<div class="dre-current-time">
+						</div>
+						<div class="dre-seek-bar">
+							<div class="dre-play-bar">
+							</div>
+						</div>
+						<div class="dre-duration">
+						</div>
+					</div>
+					<div class="right-player-side">
+						<div class="dre-thumbnail">
+							<img src="assets/img/album_cover.jpg" alt="">
+						</div>
+						<div class="dre-title">
+						</div>
+						<div class="dre-artist">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End player -->
+	<!-- Start Playlist-->
+	<div class="playlist-wrapper" id="playlist-wrapper">
+		<div class="jp-playlist container">
+			<div class="about-list clearfix">
+				<span class="about-name">NOM DU MORCEAU</span>
+				<span class="about-length">DUREE</span>
+				<span class="about-available">DISPONIBLE SUR</span>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/hillsong.mp3" data-artist="Hillsong United" data-thumbnail="assets/img/hillsong-united.jpg" data-id="trak-200">
+				<audio preload="metadata" src="assets/audio/hillsong.mp3" title="So will I - Hillsong United"></audio>
+				<div class="additional-button">
+					<div class="center-table">
+						<a href="https://www.apple.com/" target="_blank">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="https://soundcloud.com/" target="_blank">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-table">
+						<h2>So Will I - Hillsong United</h2>
+					</div>
+				</div>
+				<time class="trak-duration">00:00</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/sinach-wayMaker.mp3" data-artist="Sinach" data-thumbnail="assets/img/sinach.jpg" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/sinach-wayMaker.mp3" title="Way Maker"></audio>
+				<div class="additional-button">
+					<div class="center-table">
+						<a href="https://www.apple.com/" target="_blank">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="https://soundcloud.com/" target="_blank">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-table">
+						<h2>Sinach - Way Maker</h2>
+					</div>
+				</div>
+				<time class="trak-duration">00:00</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/sinach-great.mp3" data-artist="Sinach" data-thumbnail="assets/img/sinach.jpg" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/sinach-great.mp3" title="Great are you Lord"></audio>
+				<div class="additional-button">
+					<div class="center-table">
+						<a href="https://www.apple.com/" target="_blank">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="https://soundcloud.com/" target="_blank">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-table">
+						<h2>
+							Sinach - Great are you lord
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/sinach-theName.mp3" data-artist="Sinach" data-thumbnail="assets/img/sinach.jpg" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/sinach-theName.mp3" title="The name of JESUS"></audio>
+				<div class="additional-button">
+					<div class="center-table">
+						<a href="https://www.apple.com/" target="_blank">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="https://soundcloud.com/" target="_blank">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-table">
+						<h2>
+							Sinach - The name of JESUS
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+		</div>
+	</div>
+	<!-- End Playlist -->
+
+	<!-- Start Full Slideshow -->
+	<section class="no-mb">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="breadcrumb-fullscreen-parent phone-menu-bg">
+					<div class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay" style="background-image: url('assets/img/background.jpg');" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+						<div id="home" style="position: absolute;left: 0;top: 0;">
+							<div class="intro-header">
+								<div class="js-height-full star" style="height: 955px;">
+									<div class="star-pattern-1 js-height-full" style="height: 994px;"></div>
+									<div class="col-sm-12"> 
+										<canvas class="cover" width="1920" height="955"></canvas>
+									</div>
+								</div>
+							</div>
+	   					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- -->
+	<!-- Start jquery scripts -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.jplayer.js"></script>
+	<script src="assets/js/jPlayer.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+	<!-- End jquery scripts -->
+</body>
+</html>
